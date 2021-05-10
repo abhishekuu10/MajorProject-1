@@ -10,5 +10,8 @@ module.exports.profile=function(req,res){
 
 module.exports.posts=function(req,res){
 
-    res.end('<h1>User posts</h1>');
+    // res.end('<h1>User posts</h1>');
+    res.render('user_posts',{
+        title:"posts"
+    });
 }
